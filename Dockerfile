@@ -14,6 +14,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install --no-install-recomme
   git \
   htop \
   man \
+  mercurial \
+  bzr \
   vim
 
 VOLUME ["/data"]
