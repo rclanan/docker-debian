@@ -5,18 +5,29 @@ FROM debian:jessie
 MAINTAINER Ray Clanan <rclanan@utopianconcept.com>
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+  autoconf \
   build-essential \
-  software-properties-common \
-  libsqlite3-dev \
-  libxslt1-dev \
-  libxml2-dev \
-  zlib1g \
-  zlib1g-dev \
-  libssl-dev \
-  libreadline-dev \
+  imagemagick \
+  libbz2-dev \
   libcurl4-openssl-dev \
+  libevent-dev \
+  libffi-dev \
+  libglib2.0-dev \
+  libjpeg-dev \
+  libmagickcore-dev \
+  libmagickwand-dev \
+  libmysqlclient-dev \
+  libncurses-dev \
+  libpq-dev \
+  libpq-dev \
+  libreadline-dev \
+  libsqlite3-dev \
   libssl-dev \
+  libxml2 \
+  libxslt-dev \
   libyaml-dev \
+  zlib1g-dev \
+  software-properties-common \
   python-software-properties \
   byobu \
   curl \
@@ -27,7 +38,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   man \
   mercurial \
   bzr \
-  vim
+  vim && \
+  rm -rf /var/lib/apt/lists/*
 
 VOLUME ["/data"]
 
