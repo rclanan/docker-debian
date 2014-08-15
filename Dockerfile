@@ -10,10 +10,14 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   libsqlite3-dev \
   libxslt1-dev \
   libxml2-dev \
+  zlib1g \
   zlib1g-dev \
   libssl-dev \
   libreadline-dev \
+  libcurl4-openssl-dev \
+  libssl-dev \
   libyaml-dev \
+  python-software-properties \
   byobu \
   curl \
   wget \
